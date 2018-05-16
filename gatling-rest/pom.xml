@@ -90,6 +90,16 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources/node_modules</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>    
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
